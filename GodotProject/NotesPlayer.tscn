@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Material/HW.tres" type="Material" id=1]
 [ext_resource path="res://Material/BK.tres" type="Material" id=2]
@@ -7,7 +7,11 @@
 material = ExtResource( 2 )
 size = Vector3( 16, 1, 50 )
 
+[sub_resource type="CubeMesh" id=4]
+size = Vector3( 0.05, 0.05, 50 )
+
 [sub_resource type="CylinderMesh" id=2]
+material = ExtResource( 1 )
 top_radius = 0.5
 bottom_radius = 0.5
 height = 50.0
@@ -24,19 +28,74 @@ size = Vector3( 1.75, 0.1, 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 25 )
 mesh = SubResource( 1 )
 
-[node name="SideBar" type="MeshInstance" parent="Background"]
+[node name="AllRain" type="Spatial" parent="Background/MainGround"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -25 )
+
+[node name="CenterRain" type="MeshInstance" parent="Background/MainGround/AllRain"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 25 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../../..")
+
+[node name="1" type="MeshInstance" parent="Background/MainGround/AllRain"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 25 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../../..")
+
+[node name="2" type="MeshInstance" parent="Background/MainGround/AllRain"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 25 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../../..")
+
+[node name="3" type="MeshInstance" parent="Background/MainGround/AllRain"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.5, 25 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../../..")
+
+[node name="4" type="MeshInstance" parent="Background/MainGround/AllRain"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.5, 25 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../../..")
+
+[node name="5" type="MeshInstance" parent="Background/MainGround/AllRain"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.5, 25 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../../..")
+
+[node name="6" type="MeshInstance" parent="Background/MainGround/AllRain"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 25 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../../..")
+
+[node name="7" type="MeshInstance" parent="Background/MainGround/AllRain"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 25 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../../..")
+
+[node name="8" type="MeshInstance" parent="Background/MainGround/AllRain"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 25 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../../..")
+
+[node name="9" type="MeshInstance" parent="Background/MainGround/AllRain"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.5, 25 )
+mesh = SubResource( 4 )
+skeleton = NodePath("../../..")
+
+[node name="SideBarRight" type="MeshInstance" parent="Background"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 8.5, 0, 25 )
 mesh = SubResource( 2 )
 
-[node name="SideBar2" type="MeshInstance" parent="Background"]
+[node name="SideBarLeft" type="MeshInstance" parent="Background"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -8.5, 0, 25 )
 mesh = SubResource( 2 )
-
-[node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 6, 50 )
 
 [node name="Notes" type="Spatial" parent="."]
 
 [node name="MeshInstance" type="MeshInstance" parent="Notes"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
 mesh = SubResource( 3 )
+
+[node name="CameraNode" type="Spatial" parent="."]
+
+[node name="MainCamera" type="Camera" parent="CameraNode"]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 5, 52 )
