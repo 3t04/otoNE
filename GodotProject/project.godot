@@ -11,12 +11,12 @@ config_version=4
 [application]
 
 config/name="oto"
-run/main_scene="res://NotesPlayer.tscn"
+run/main_scene="res://scenes/NotesPlayer.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-NotesPlayer="*res://NotesPlayer.tscn"
+HomeMenu="*res://scenes/HomeMenu.tscn"
 
 [display]
 
@@ -27,6 +27,11 @@ window/size/test_height=600
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[input_devices]
+
+pointing/ios/touch_delay=0.0
+pointing/emulate_touch_from_mouse=true
 
 [physics]
 
@@ -40,4 +45,3 @@ quality/subsurface_scattering/scale=6
 quality/voxel_cone_tracing/high_quality=true
 quality/filters/msaa=2
 quality/filters/use_fxaa=true
-environment/default_environment="res://scenes/default_env.tres"
