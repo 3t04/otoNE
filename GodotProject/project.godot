@@ -10,19 +10,21 @@ config_version=4
 
 [application]
 
-config/name="oto"
-run/main_scene="res://scenes/NotesPlayer.tscn"
-config/icon="res://icon.png"
+config/name="oto音"
+run/main_scene="res://Scenes/Music Game/NotesPlayer.tscn"
+config/icon="res://icon/icon.png"
 
 [autoload]
 
-HomeMenu="*res://scenes/HomeMenu.tscn"
+HomeMenu="*res://Scenes/HomeMenu.tscn"
 
 [display]
 
 window/size/always_on_top=true
 window/size/test_width=1024
 window/size/test_height=600
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [gui]
 

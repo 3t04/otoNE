@@ -1,4 +1,4 @@
-extends Control
+extends Node
 
 
 # Declare member variables here. Examples:
@@ -16,5 +16,5 @@ func _ready():
 #	pass
 
 
-func _on_test_pressed():
-	get_tree().change_scene("res://scenes/NotesPlayer.tscn")
+func _on_Button_pressed():
+	get_tree().change_scene("res://Scenes/Music Game/SelectMusicPanel.tscn")

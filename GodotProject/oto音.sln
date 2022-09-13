@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oto音", "oto音.csproj", "{3E9A1FF2-7F86-46CC-84A9-CED797AEC2CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E9A1FF2-7F86-46CC-84A9-CED797AEC2CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9A1FF2-7F86-46CC-84A9-CED797AEC2CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9A1FF2-7F86-46CC-84A9-CED797AEC2CB}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{3E9A1FF2-7F86-46CC-84A9-CED797AEC2CB}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{3E9A1FF2-7F86-46CC-84A9-CED797AEC2CB}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{3E9A1FF2-7F86-46CC-84A9-CED797AEC2CB}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

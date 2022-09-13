@@ -9,42 +9,75 @@ script = ExtResource( 2 )
 [node name="BackGround" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
 [node name="MainMenu" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_lock_": true
-}
 
-[node name="SelctMusicButton" type="Button" parent="MainMenu"]
+[node name="Go to game hub" type="Button" parent="MainMenu"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -115.0
-margin_top = -23.0
-margin_right = 115.0
-margin_bottom = 23.0
+margin_left = -184.5
+margin_top = -32.5
+margin_right = 184.5
+margin_bottom = 32.5
 custom_fonts/font = ExtResource( 1 )
-text = "SelectMusic"
+text = "Go To Game HUB."
+flat = true
+
+[node name="Coming Soon" type="Button" parent="MainMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -158.0
+margin_top = 50.0
+margin_right = 158.0
+margin_bottom = 115.0
+custom_fonts/font = ExtResource( 1 )
+text = "Coming Soon...."
+flat = true
 
 [node name="EnviromentSrtingsButton" type="Button" parent="MainMenu"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -136.0
-margin_top = 92.0
-margin_right = 146.0
-margin_bottom = 151.0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -368.0
+margin_top = -65.0
 custom_fonts/font = ExtResource( 1 )
 text = "EnviromentSrtings"
+flat = true
+clip_text = true
 
-[connection signal="pressed" from="MainMenu/SelctMusicButton" to="." method="_on_SelctMusicButton_pressed"]
+[node name="Exit Game" type="Button" parent="MainMenu"]
+margin_right = 155.0
+margin_bottom = 32.0
+text = "Exit Game"
+
+[node name="Control" type="Control" parent="MainMenu"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="MainMenu/Control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -50.0
+text = "Hello I' am otoNE!!
+Programd <2022/09/02>~<????/??/??>
+Made in Japna. And Thank You to Jiyugaoka Steam Mirai desian club... Inoue.Satoshi.<2022/09/13>"
+
+[connection signal="pressed" from="MainMenu/Go to game hub" to="." method="_on_Go_to_game_hub_pressed"]
+[connection signal="pressed" from="MainMenu/Coming Soon" to="." method="_on_Coming_Soon_pressed"]
 [connection signal="pressed" from="MainMenu/EnviromentSrtingsButton" to="." method="_on_EnviromentSrtingsButton_pressed"]
+[connection signal="pressed" from="MainMenu/Exit Game" to="." method="_on_Exit_Game_pressed"]

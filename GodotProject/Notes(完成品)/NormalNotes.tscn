@@ -7,7 +7,6 @@
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4313, 0, 0 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
 mesh = ExtResource( 2 )
 script = ExtResource( 1 )
 
