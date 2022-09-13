@@ -20,9 +20,11 @@ HomeMenu="*res://Scenes/HomeMenu.tscn"
 
 [display]
 
+window/size/width=1194
+window/size/height=834
 window/size/always_on_top=true
-window/size/test_width=1024
-window/size/test_height=600
+window/size/test_width=1194
+window/size/test_height=834
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 

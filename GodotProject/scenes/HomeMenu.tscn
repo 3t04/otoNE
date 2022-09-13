@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Font/MusicSelectorFont/DynamicFont1.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Script/ChangeName/HomeMenu.gd" type="Script" id=2]
+[ext_resource path="res://Font/MusicSelectorFont/DynamicFont3.tres" type="DynamicFont" id=3]
 
 [node name="AllMenu" type="Node"]
 script = ExtResource( 2 )
@@ -20,49 +21,6 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="Go to game hub" type="Button" parent="MainMenu"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -184.5
-margin_top = -32.5
-margin_right = 184.5
-margin_bottom = 32.5
-custom_fonts/font = ExtResource( 1 )
-text = "Go To Game HUB."
-flat = true
-
-[node name="Coming Soon" type="Button" parent="MainMenu"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -158.0
-margin_top = 50.0
-margin_right = 158.0
-margin_bottom = 115.0
-custom_fonts/font = ExtResource( 1 )
-text = "Coming Soon...."
-flat = true
-
-[node name="EnviromentSrtingsButton" type="Button" parent="MainMenu"]
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -368.0
-margin_top = -65.0
-custom_fonts/font = ExtResource( 1 )
-text = "EnviromentSrtings"
-flat = true
-clip_text = true
-
-[node name="Exit Game" type="Button" parent="MainMenu"]
-margin_right = 155.0
-margin_bottom = 32.0
-text = "Exit Game"
-
 [node name="Control" type="Control" parent="MainMenu"]
 anchor_top = 1.0
 anchor_right = 1.0
@@ -72,12 +30,80 @@ anchor_bottom = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -50.0
+margin_top = -102.0
+custom_fonts/font = ExtResource( 3 )
 text = "Hello I' am otoNE!!
 Programd <2022/09/02>~<????/??/??>
 Made in Japna. And Thank You to Jiyugaoka Steam Mirai desian club... Inoue.Satoshi.<2022/09/13>"
 
-[connection signal="pressed" from="MainMenu/Go to game hub" to="." method="_on_Go_to_game_hub_pressed"]
-[connection signal="pressed" from="MainMenu/Coming Soon" to="." method="_on_Coming_Soon_pressed"]
+[node name="Move" type="Control" parent="MainMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -251.0
+margin_top = -97.0
+margin_right = 252.0
+margin_bottom = 232.0
+
+[node name="Go to game hub" type="Button" parent="MainMenu/Move"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -36.0
+margin_right = 200.0
+margin_bottom = 36.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Go To Game HUB."
+flat = true
+
+[node name="Coming Soon" type="Button" parent="MainMenu/Move"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -174.0
+margin_top = 33.0
+margin_right = 174.0
+margin_bottom = 105.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Coming Soon...."
+flat = true
+
+[node name="EnviromentSrtingsButton" type="Button" parent="MainMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 203.0
+margin_top = 231.0
+margin_right = 595.0
+margin_bottom = 303.0
+custom_fonts/font = ExtResource( 1 )
+text = "EnviromentSrtings"
+flat = true
+clip_text = true
+
+[node name="Exit Game" type="Button" parent="MainMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 331.0
+margin_top = 303.0
+margin_right = 589.0
+margin_bottom = 375.0
+custom_fonts/font = ExtResource( 1 )
+text = "Exit Game"
+flat = true
+
+[connection signal="pressed" from="MainMenu/Move/Go to game hub" to="." method="_on_Go_to_game_hub_pressed"]
+[connection signal="pressed" from="MainMenu/Move/Coming Soon" to="." method="_on_Coming_Soon_pressed"]
 [connection signal="pressed" from="MainMenu/EnviromentSrtingsButton" to="." method="_on_EnviromentSrtingsButton_pressed"]
 [connection signal="pressed" from="MainMenu/Exit Game" to="." method="_on_Exit_Game_pressed"]

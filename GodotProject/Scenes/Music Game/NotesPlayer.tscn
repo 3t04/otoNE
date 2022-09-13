@@ -8,7 +8,6 @@
 [ext_resource path="res://Mesh/BackLightRain/BackLightRain.tres" type="CubeMesh" id=6]
 [ext_resource path="res://NormalNotes2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/Music Game/NotesPlayer.gd" type="Script" id=8]
-[ext_resource path="res://Script/NotesManager/new_script.cs" type="Script" id=9]
 [ext_resource path="res://Notes(完成品)/NormalNotes.tscn" type="PackedScene" id=10]
 
 [sub_resource type="CubeMesh" id=1]
@@ -34,6 +33,73 @@ size = Vector3( 16, 0.01, 1 )
 background_mode = 1
 background_sky = SubResource( 7 )
 ambient_light_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="CSharpScript" id=8]
+script/source = "using System;
+using System.Collections.Generic;
+using godot;
+
+[Serializable]
+public class Data
+{
+	public string name;
+	public int maxBlock;
+	public int BPM;
+	public int offset;
+	public Note[] notes;
+
+}
+[Serializable]
+public class Note
+{
+	public int type;
+	public int num;
+	public int block;
+	public int LPB;
+}
+
+public class NotesManager : MonoBehaviour
+{
+	public int noteNum;
+	private string songName;
+
+	public List＜int＞ LaneNum = new List＜int＞();
+	public List＜int＞ NoteType = new List＜int＞();
+	public List＜float＞ NotesTime = new List＜float＞();
+	public List＜GameObject＞ NotesObj = new List＜GameObject＞();
+
+	[SerializeField] private float NotesSpeed;
+	[SerializeField] GameObject noteObj;
+
+	void OnEnable()
+	{
+		noteNum = 0;
+		songName = \"テスト\";
+		Load(songName);
+	}
+
+	private void Load(string SongName)
+	{
+		string inputString = Resources.Load＜TextAsset＞(SongName).ToString();
+		Data inputJson = JsonUtility.FromJson＜Data＞(inputString);
+
+		noteNum = inputJson.notes.Length;
+
+		for (int i = 0; i ＜ inputJson.notes.Length; i++)
+		{
+			float kankaku = 60 / (inputJson.BPM * (float)inputJson.notes[i].LPB);
+			float beatSec = kankaku * (float)inputJson.notes[i].LPB;
+			float time = (beatSec * inputJson.notes[i].num / (float)inputJson.notes[i].LPB) + inputJson.offset + 0.01f;
+			NotesTime.Add(time);
+			LaneNum.Add(inputJson.notes[i].block);
+			NoteType.Add(inputJson.notes[i].type);
+
+			float z = NotesTime[i] * NotesSpeed;
+			NotesObj.Add(Instantiate(noteObj, new Vector3(inputJson.notes[i].block - 1.5f, 0.55f, z), Quaternion.identity));
+		}
+	}
+}
+"
 
 [node name="NotesPlayer" type="Node"]
 script = ExtResource( 8 )
@@ -291,4 +357,4 @@ flat = true
 icon_align = 1
 
 [node name="NotesManager" type="Node" parent="."]
-script = ExtResource( 9 )
+script = SubResource( 8 )
