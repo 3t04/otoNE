@@ -1,18 +1,18 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Script/NotesProgram/NotesDown.gd" type="Script" id=1]
-[ext_resource path="res://Mesh/Notes/NormalNotes/NormalNotesMesh.tres" type="CubeMesh" id=2]
+[ext_resource path="res://Mesh/NotesMesh/NotesMesh.tres" type="CubeMesh" id=1]
+[ext_resource path="res://Material/NotesMaterial/NotesMaterial.tres" type="Material" id=2]
 
 [node name="NormalNotes" type="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4313, 0, 0 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-mesh = ExtResource( 2 )
-script = ExtResource( 1 )
+mesh = ExtResource( 1 )
+material/0 = ExtResource( 2 )
 
 [node name="SpotLight" type="SpotLight" parent="MeshInstance"]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 4.4, 0 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3, 0 )
 light_color = Color( 0.905882, 0.541176, 0.956863, 1 )
 light_energy = 10.0
 light_indirect_energy = 10.0
 light_specular = 10.0
+spot_range = 3.32239
