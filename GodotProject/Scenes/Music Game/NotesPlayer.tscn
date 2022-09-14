@@ -105,7 +105,7 @@ script = ExtResource( 8 )
 [node name="Background" type="Spatial" parent="."]
 
 [node name="MainGround" type="MeshInstance" parent="Background"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 25 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00680447, -1.20246, 25.1081 )
 mesh = SubResource( 1 )
 material/0 = ExtResource( 1 )
 
@@ -301,6 +301,10 @@ transform = Transform( 1, 0, 0, 0, 0.766045, 0.642788, 0, -0.642788, 0.766045, 0
 
 [node name="TouchBarRain" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.788011, 0.615662, 0, -0.615662, 0.788011, 0, 0.5, 46 )
+mesh = SubResource( 5 )
+
+[node name="TouchBarRain2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.788011, 0.615662, 0, -0.615662, 0.788011, 0, 0.5, 46.5 )
 mesh = SubResource( 5 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
