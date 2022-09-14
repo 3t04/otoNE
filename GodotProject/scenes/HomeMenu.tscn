@@ -33,8 +33,8 @@ anchor_bottom = 1.0
 margin_top = -102.0
 custom_fonts/font = ExtResource( 3 )
 text = "Hello I' am otoNE!!
-Programd <2022/09/02>~<????/??/??>
-Made in Japna. And Thank You to Jiyugaoka Steam Mirai desian club... Inoue.Satoshi.<2022/09/13>"
+Programd <2022/09/02> ~ <????/??/??>
+Made in Japna. And Thank You to Jiyugaoka Steam Mirai Desian Club... Inoue.Satoshi.<2022/09/13>"
 
 [node name="Move" type="Control" parent="MainMenu"]
 anchor_left = 0.5

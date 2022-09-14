@@ -12,6 +12,7 @@ config_version=4
 
 config/name="oto音"
 run/main_scene="res://Scenes/Music Game/NotesPlayer.tscn"
+config/use_custom_user_dir=true
 config/icon="res://icon/icon.png"
 
 [autoload]
@@ -25,6 +26,7 @@ window/size/height=834
 window/size/always_on_top=true
 window/size/test_width=1194
 window/size/test_height=834
+window/dpi/allow_hidpi=true
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 
@@ -39,11 +41,15 @@ pointing/emulate_touch_from_mouse=true
 
 [physics]
 
+3d/smooth_trimesh_collision=true
+common/physics_fps=120
 common/enable_pause_aware_picking=true
+common/physics_interpolation=true
 
 [rendering]
 
 quality/filters/sharpen_intensity=0.3
+quality/reflections/texture_array_reflections.mobile=true
 quality/subsurface_scattering/quality=2
 quality/subsurface_scattering/scale=6
 quality/voxel_cone_tracing/high_quality=true
