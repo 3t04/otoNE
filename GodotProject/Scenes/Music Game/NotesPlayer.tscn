@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Material/BK.tres" type="Material" id=1]
 [ext_resource path="res://Material/Red.tres" type="Material" id=2]
@@ -8,7 +8,11 @@
 [ext_resource path="res://Mesh/BackLightRain/BackLightRain.tres" type="CubeMesh" id=6]
 [ext_resource path="res://NormalNotes2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/Music Game/NotesPlayer.gd" type="Script" id=8]
+[ext_resource path="res://Judgement/悪.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Notes(完成品)/NormalNotes.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Judgement/良き.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Judgement/糞wwww.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Judgement/よろしゅうおす.tscn" type="PackedScene" id=13]
 
 [sub_resource type="CubeMesh" id=1]
 material = ExtResource( 1 )
@@ -223,97 +227,97 @@ material/0 = ExtResource( 4 )
 
 [node name="AllBackLightRain" type="Spatial" parent="Background/MainGround"]
 
-[node name="1" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR1" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="2" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR2" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="3" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR3" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="4" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR$" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="5" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR5" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="6" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR6" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="7" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR7" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="8" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR8" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="-1" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLRL-1" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="-2" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR-2" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="-3" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR-3" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="-4" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR-4" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="-5" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR-5" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="-6" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR-6" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="-7" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR-7" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
 material/0 = ExtResource( 5 )
 
-[node name="-8" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
+[node name="BLR-8" type="MeshInstance" parent="Background/MainGround/AllBackLightRain"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.5, 0 )
 mesh = ExtResource( 6 )
 skeleton = NodePath("../../..")
@@ -328,7 +332,7 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -8.5, 0
 mesh = SubResource( 2 )
 
 [node name="MainCamera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.866026, 0.5, 0, -0.5, 0.866026, 0, 8, 51 )
+transform = Transform( 1, 0, 0, 0, 0.766045, 0.642788, 0, -0.642788, 0.766045, 0, 8, 51 )
 
 [node name="TouchBarRain" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.788011, 0.615662, 0, -0.615662, 0.788011, 0, 0.5, 46 )
@@ -350,7 +354,7 @@ anchor_right = 1.0
 margin_left = -40.0
 margin_bottom = 40.0
 
-[node name="Button" type="Button" parent="Menu"]
+[node name="StopButton" type="Button" parent="Menu"]
 margin_right = 12.0
 margin_bottom = 20.0
 flat = true
@@ -358,3 +362,23 @@ icon_align = 1
 
 [node name="NotesManager" type="Node" parent="."]
 script = SubResource( 8 )
+
+[node name="Judgement" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 45 )
+
+[node name="よろしゅうおす" parent="Judgement" instance=ExtResource( 13 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+
+[node name="悪" parent="Judgement" instance=ExtResource( 9 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+visible = false
+
+[node name="糞wwww" parent="Judgement" instance=ExtResource( 12 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+visible = false
+
+[node name="良き" parent="Judgement" instance=ExtResource( 11 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+visible = false
+
+[connection signal="pressed" from="Menu/StopButton" to="." method="_on_StopButton_pressed"]

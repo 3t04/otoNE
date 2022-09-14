@@ -20,19 +20,22 @@ __meta__ = {
 }
 
 [node name="ScrollContainer" type="ScrollContainer" parent="GameHUB/BlackBackGround"]
-anchor_top = 1.0
+anchor_top = 0.278
+anchor_right = 0.429
 anchor_bottom = 1.0
-margin_top = -600.0
-margin_right = 512.0
+margin_left = 16.0
+margin_top = -15.852
+margin_right = -0.226013
+margin_bottom = -18.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="GameHUB/BlackBackGround/ScrollContainer"]
-margin_right = 512.0
+margin_right = 496.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Load To Music Game" type="Button" parent="GameHUB/BlackBackGround/ScrollContainer/VBoxContainer"]
-margin_right = 512.0
+margin_right = 496.0
 margin_bottom = 50.0
 custom_fonts/font = ExtResource( 1 )
 text = "Load To Music Game"
