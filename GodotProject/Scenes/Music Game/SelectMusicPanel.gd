@@ -6,5 +6,7 @@ func _ready():
 	#右に展開させる。
 
 
+
+
 func _on_BackButton_pressed():
-	get_tree().change_scene("res://Scenes/Music Game/MusicGamefirstFistScreen.gd")
+	get_tree().change_scene("res://Scenes/Music Game/MusicGamefirstFistScreen.tscn")

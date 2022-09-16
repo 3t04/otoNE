@@ -18,3 +18,8 @@ func _ready():
 
 func _on_Button_pressed():
 	get_tree().change_scene("res://Scenes/Music Game/SelectMusicPanel.tscn")
+
+
+
+func _on_BackButton_pressed():
+	get_tree().change_scene("res://Scenes/GameHUB.tscn")

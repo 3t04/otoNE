@@ -22,8 +22,9 @@ __meta__ = {
 anchor_top = 0.288
 anchor_right = 0.409
 anchor_bottom = 1.0
-margin_top = -0.192017
-margin_right = 11.654
+margin_left = -1.0
+margin_top = -0.191986
+margin_right = 10.654
 
 [node name="VBoxContainer" type="VBoxContainer" parent="AllMusicTitle"]
 margin_right = 488.0
@@ -711,10 +712,10 @@ anchor_left = 0.419
 anchor_top = 0.288
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 16.714
-margin_top = -0.191986
-margin_right = -22.0
-margin_bottom = -108.0
+margin_left = 5.71399
+margin_top = -5.19199
+margin_right = -33.0
+margin_bottom = -113.0
 
 [node name="SelectLevel" type="Control" parent="."]
 anchor_left = 0.419
