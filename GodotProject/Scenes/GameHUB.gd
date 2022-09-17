@@ -12,5 +12,11 @@ func _on_Load_To_Music_Game_pressed():
 	get_tree().change_scene("res://Scenes/Music Game/MusicGamefirstFistScreen.tscn")
 
 
+
+
 func _on_BackButton_pressed():
-	get_tree().change_scene("res://Scenes/HomeMenu.tscn")
+	get_tree().change_scene("res://Scenes/Music Game/HomeMenu.tscn")
+
+
+func _on_Load_To_wait_pressed():
+	pass # Replace with function body.

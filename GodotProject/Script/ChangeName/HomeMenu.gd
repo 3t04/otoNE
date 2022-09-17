@@ -5,7 +5,7 @@ func _ready():
 	pass # Replace with function body.
 
 func _on_Go_to_game_hub_pressed():
-	get_tree().change_scene("res://Scenes/GameHUB.tscn")
+	get_tree().change_scene("res://Scenes/Music Game/MusicGamefirstFistScreen.tscn")
 
 func _on_Coming_Soon_pressed():
 	pass # Replace with function body.

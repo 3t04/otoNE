@@ -22,12 +22,13 @@ __meta__ = {
 anchor_top = 0.288
 anchor_right = 0.409
 anchor_bottom = 1.0
-margin_top = -0.192017
-margin_right = 11.654
+margin_left = -1.0
+margin_top = -0.191986
+margin_right = 10.654
 
 [node name="VBoxContainer" type="VBoxContainer" parent="AllMusicTitle"]
 margin_right = 488.0
-margin_bottom = 5176.0
+margin_bottom = 5200.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
@@ -228,469 +229,480 @@ custom_fonts/font = ExtResource( 2 )
 text = "T"
 align = 1
 
-[node name="U" type="Label" parent="AllMusicTitle/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="AllMusicTitle/VBoxContainer"]
 margin_top = 1540.0
 margin_right = 488.0
-margin_bottom = 1606.0
+margin_bottom = 1560.0
+size_flags_horizontal = 3
+
+[node name="Test初音ミクの消失" type="Button" parent="AllMusicTitle/VBoxContainer/VBoxContainer"]
+margin_right = 488.0
+margin_bottom = 20.0
+text = "Test初音ミクの消失"
+
+[node name="U" type="Label" parent="AllMusicTitle/VBoxContainer"]
+margin_top = 1564.0
+margin_right = 488.0
+margin_bottom = 1630.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "U"
 align = 1
 
 [node name="V" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 1610.0
+margin_top = 1634.0
 margin_right = 488.0
-margin_bottom = 1676.0
+margin_bottom = 1700.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "V"
 align = 1
 
 [node name="W" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 1680.0
+margin_top = 1704.0
 margin_right = 488.0
-margin_bottom = 1746.0
+margin_bottom = 1770.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "W"
 align = 1
 
 [node name="X" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 1750.0
+margin_top = 1774.0
 margin_right = 488.0
-margin_bottom = 1816.0
+margin_bottom = 1840.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "X"
 align = 1
 
 [node name="Y" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 1820.0
+margin_top = 1844.0
 margin_right = 488.0
-margin_bottom = 1886.0
+margin_bottom = 1910.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "Y"
 align = 1
 
 [node name="Z" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 1890.0
+margin_top = 1914.0
 margin_right = 488.0
-margin_bottom = 1956.0
+margin_bottom = 1980.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "Z"
 align = 1
 
 [node name="あ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 1960.0
+margin_top = 1984.0
 margin_right = 488.0
-margin_bottom = 2026.0
+margin_bottom = 2050.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "あ"
 align = 1
 
 [node name="い" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2030.0
+margin_top = 2054.0
 margin_right = 488.0
-margin_bottom = 2096.0
+margin_bottom = 2120.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "い"
 align = 1
 
 [node name="う" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2100.0
+margin_top = 2124.0
 margin_right = 488.0
-margin_bottom = 2166.0
+margin_bottom = 2190.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "う"
 align = 1
 
 [node name="え" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2170.0
+margin_top = 2194.0
 margin_right = 488.0
-margin_bottom = 2236.0
+margin_bottom = 2260.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "え"
 align = 1
 
 [node name="お" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2240.0
+margin_top = 2264.0
 margin_right = 488.0
-margin_bottom = 2306.0
+margin_bottom = 2330.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "お"
 align = 1
 
 [node name="か" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2310.0
+margin_top = 2334.0
 margin_right = 488.0
-margin_bottom = 2376.0
+margin_bottom = 2400.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "か"
 align = 1
 
 [node name="き" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2380.0
+margin_top = 2404.0
 margin_right = 488.0
-margin_bottom = 2446.0
+margin_bottom = 2470.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "き"
 align = 1
 
 [node name="く" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2450.0
+margin_top = 2474.0
 margin_right = 488.0
-margin_bottom = 2516.0
+margin_bottom = 2540.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "く"
 align = 1
 
 [node name="け" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2520.0
+margin_top = 2544.0
 margin_right = 488.0
-margin_bottom = 2586.0
+margin_bottom = 2610.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "け"
 align = 1
 
 [node name="こ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2590.0
+margin_top = 2614.0
 margin_right = 488.0
-margin_bottom = 2656.0
+margin_bottom = 2680.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "こ"
 align = 1
 
 [node name="さ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2660.0
+margin_top = 2684.0
 margin_right = 488.0
-margin_bottom = 2726.0
+margin_bottom = 2750.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "さ"
 align = 1
 
 [node name="し" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2730.0
+margin_top = 2754.0
 margin_right = 488.0
-margin_bottom = 2796.0
+margin_bottom = 2820.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "し"
 align = 1
 
 [node name="す" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2800.0
+margin_top = 2824.0
 margin_right = 488.0
-margin_bottom = 2866.0
+margin_bottom = 2890.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "す"
 align = 1
 
 [node name="せ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2870.0
+margin_top = 2894.0
 margin_right = 488.0
-margin_bottom = 2936.0
+margin_bottom = 2960.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "せ"
 align = 1
 
 [node name="そ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 2940.0
+margin_top = 2964.0
 margin_right = 488.0
-margin_bottom = 3006.0
+margin_bottom = 3030.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "そ"
 align = 1
 
 [node name="た" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3010.0
+margin_top = 3034.0
 margin_right = 488.0
-margin_bottom = 3076.0
+margin_bottom = 3100.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "た"
 align = 1
 
 [node name="ち" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3080.0
+margin_top = 3104.0
 margin_right = 488.0
-margin_bottom = 3146.0
+margin_bottom = 3170.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "ち"
 align = 1
 
 [node name="つ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3150.0
+margin_top = 3174.0
 margin_right = 488.0
-margin_bottom = 3216.0
+margin_bottom = 3240.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "つ"
 align = 1
 
 [node name="て" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3220.0
+margin_top = 3244.0
 margin_right = 488.0
-margin_bottom = 3286.0
+margin_bottom = 3310.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "て"
 align = 1
 
 [node name="と" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3290.0
+margin_top = 3314.0
 margin_right = 488.0
-margin_bottom = 3356.0
+margin_bottom = 3380.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "と"
 align = 1
 
 [node name="な" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3360.0
+margin_top = 3384.0
 margin_right = 488.0
-margin_bottom = 3426.0
+margin_bottom = 3450.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "な"
 align = 1
 
 [node name="に" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3430.0
+margin_top = 3454.0
 margin_right = 488.0
-margin_bottom = 3496.0
+margin_bottom = 3520.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "に"
 align = 1
 
 [node name="ぬ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3500.0
+margin_top = 3524.0
 margin_right = 488.0
-margin_bottom = 3566.0
+margin_bottom = 3590.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "ぬ"
 align = 1
 
 [node name="ね" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3570.0
+margin_top = 3594.0
 margin_right = 488.0
-margin_bottom = 3636.0
+margin_bottom = 3660.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "ね"
 align = 1
 
 [node name="の" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3640.0
+margin_top = 3664.0
 margin_right = 488.0
-margin_bottom = 3706.0
+margin_bottom = 3730.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "の"
 align = 1
 
 [node name="は" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3710.0
+margin_top = 3734.0
 margin_right = 488.0
-margin_bottom = 3776.0
+margin_bottom = 3800.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "は"
 align = 1
 
 [node name="ひ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3780.0
+margin_top = 3804.0
 margin_right = 488.0
-margin_bottom = 3846.0
+margin_bottom = 3870.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "ひ"
 align = 1
 
 [node name="ふ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3850.0
+margin_top = 3874.0
 margin_right = 488.0
-margin_bottom = 3916.0
+margin_bottom = 3940.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "ふ"
 align = 1
 
 [node name="へ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3920.0
+margin_top = 3944.0
 margin_right = 488.0
-margin_bottom = 3986.0
+margin_bottom = 4010.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "へ"
 align = 1
 
 [node name="ほ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 3990.0
+margin_top = 4014.0
 margin_right = 488.0
-margin_bottom = 4056.0
+margin_bottom = 4080.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "ほ"
 align = 1
 
 [node name="ま" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4060.0
+margin_top = 4084.0
 margin_right = 488.0
-margin_bottom = 4126.0
+margin_bottom = 4150.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "ま"
 align = 1
 
 [node name="み" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4130.0
+margin_top = 4154.0
 margin_right = 488.0
-margin_bottom = 4196.0
+margin_bottom = 4220.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "み"
 align = 1
 
 [node name="む" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4200.0
+margin_top = 4224.0
 margin_right = 488.0
-margin_bottom = 4266.0
+margin_bottom = 4290.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "む"
 align = 1
 
 [node name="め" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4270.0
+margin_top = 4294.0
 margin_right = 488.0
-margin_bottom = 4336.0
+margin_bottom = 4360.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "め"
 align = 1
 
 [node name="も" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4340.0
+margin_top = 4364.0
 margin_right = 488.0
-margin_bottom = 4406.0
+margin_bottom = 4430.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "も"
 align = 1
 
 [node name="や" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4410.0
+margin_top = 4434.0
 margin_right = 488.0
-margin_bottom = 4476.0
+margin_bottom = 4500.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "や"
 align = 1
 
 [node name="ゆ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4480.0
+margin_top = 4504.0
 margin_right = 488.0
-margin_bottom = 4546.0
+margin_bottom = 4570.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "ゆ"
 align = 1
 
 [node name="よ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4550.0
+margin_top = 4574.0
 margin_right = 488.0
-margin_bottom = 4616.0
+margin_bottom = 4640.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "よ"
 align = 1
 
 [node name="ら" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4620.0
+margin_top = 4644.0
 margin_right = 488.0
-margin_bottom = 4686.0
+margin_bottom = 4710.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "ら"
 align = 1
 
 [node name="り" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4690.0
+margin_top = 4714.0
 margin_right = 488.0
-margin_bottom = 4756.0
+margin_bottom = 4780.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "り"
 align = 1
 
 [node name="る" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4760.0
+margin_top = 4784.0
 margin_right = 488.0
-margin_bottom = 4826.0
+margin_bottom = 4850.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "る"
 align = 1
 
 [node name="れ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4830.0
+margin_top = 4854.0
 margin_right = 488.0
-margin_bottom = 4896.0
+margin_bottom = 4920.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "れ"
 align = 1
 
 [node name="ろ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4900.0
+margin_top = 4924.0
 margin_right = 488.0
-margin_bottom = 4966.0
+margin_bottom = 4990.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "ろ"
 align = 1
 
 [node name="わ" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 4970.0
+margin_top = 4994.0
 margin_right = 488.0
-margin_bottom = 5036.0
+margin_bottom = 5060.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "わ"
 align = 1
 
 [node name="を" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 5040.0
+margin_top = 5064.0
 margin_right = 488.0
-margin_bottom = 5106.0
+margin_bottom = 5130.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "を"
 align = 1
 
 [node name="ん" type="Label" parent="AllMusicTitle/VBoxContainer"]
-margin_top = 5110.0
+margin_top = 5134.0
 margin_right = 488.0
-margin_bottom = 5176.0
+margin_bottom = 5200.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
 text = "ん"
@@ -711,10 +723,10 @@ anchor_left = 0.419
 anchor_top = 0.288
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 16.714
-margin_top = -0.191986
-margin_right = -22.0
-margin_bottom = -108.0
+margin_left = 5.71399
+margin_top = -5.19199
+margin_right = -33.0
+margin_bottom = -113.0
 
 [node name="SelectLevel" type="Control" parent="."]
 anchor_left = 0.419
@@ -776,4 +788,5 @@ custom_fonts/font = ExtResource( 4 )
 text = "覇者"
 icon_align = 1
 
+[connection signal="button_up" from="AllMusicTitle/VBoxContainer/VBoxContainer/Test初音ミクの消失" to="." method="_on_Test_button_up"]
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]

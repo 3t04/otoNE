@@ -8,16 +8,116 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "JSONConfigFile",
+"language": "GDScript",
+"path": "res://json_config_file/json_config_file.gd"
+}, {
+"base": "Reference",
+"class": "JSONConfigProcessor",
+"language": "GDScript",
+"path": "res://json_config_file/json_config_processor.gd"
+}, {
+"base": "Reference",
+"class": "JSONProperty",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyArray",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_array.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyBool",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_bool.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyColor",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_color.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyEnum",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_enum.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyFile",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_file.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyImage",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_image.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyInteger",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_integer.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyJSONConfigFile",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_json_config_file.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyNumber",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_number.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyObject",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_object.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyPercentage",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_percentage.gd"
+}, {
+"base": "JSONProperty",
+"class": "JSONPropertyString",
+"language": "GDScript",
+"path": "res://json_config_file/json_properties/json_property_string.gd"
+}, {
+"base": "PanelContainer",
+"class": "JsonDock",
+"language": "GDScript",
+"path": "res://addons/json_editor/json_dock.gd"
+} ]
+_global_script_class_icons={
+"JSONConfigFile": "",
+"JSONConfigProcessor": "",
+"JSONProperty": "",
+"JSONPropertyArray": "",
+"JSONPropertyBool": "",
+"JSONPropertyColor": "",
+"JSONPropertyEnum": "",
+"JSONPropertyFile": "",
+"JSONPropertyImage": "",
+"JSONPropertyInteger": "",
+"JSONPropertyJSONConfigFile": "",
+"JSONPropertyNumber": "",
+"JSONPropertyObject": "",
+"JSONPropertyPercentage": "",
+"JSONPropertyString": "",
+"JsonDock": ""
+}
+
 [application]
 
 config/name="oto音"
-run/main_scene="res://Scenes/Music Game/NotesPlayer.tscn"
+run/main_scene="res://Scenes/HomeMenu.tscn"
 config/use_custom_user_dir=true
 config/icon="res://icon/icon.png"
 
-[autoload]
+[debug]
 
-HomeMenu="*res://Scenes/Music Game/HomeMenu.tscn"
+settings/fps/force_fps=120
 
 [display]
 
@@ -29,6 +129,10 @@ window/size/test_height=834
 window/dpi/allow_hidpi=true
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/json_editor/plugin.cfg" )
 
 [gui]
 

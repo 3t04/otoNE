@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://AllMusic/jp/ハ行/初音ミクの消失/初音ミクの消失.gd" type="Script" id=1]
+[ext_resource path="res://Notes/Lanes.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Notes/CanvasLayer.gd" type="Script" id=3]
+[ext_resource path="res://Notes/Framerate.gd" type="Script" id=4]
+[ext_resource path="res://Notes/Conductor.tscn" type="PackedScene" id=5]
+
+[node name="OtoNEplayer" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="Lanes" parent="." instance=ExtResource( 2 )]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.819152, 0.573577, 0, -0.573577, 0.819152, 0, 3.25, 2 )
+current = true
+
+[node name="Conductor" parent="." instance=ExtResource( 5 )]
+autoplay = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource( 3 )
+
+[node name="Framerate" type="Label" parent="CanvasLayer"]
+margin_right = 138.0
+margin_bottom = 50.0
+size_flags_stretch_ratio = 2.0
+align = 1
+script = ExtResource( 4 )
+
+[connection signal="finished" from="Conductor" to="." method="_on_Conductor_finished"]

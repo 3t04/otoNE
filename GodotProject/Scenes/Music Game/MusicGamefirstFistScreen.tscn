@@ -65,3 +65,4 @@ flat = true
 clip_text = true
 
 [connection signal="pressed" from="Menu/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]

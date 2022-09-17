@@ -1,3 +1,0 @@
-extends Node
-
-var stringname

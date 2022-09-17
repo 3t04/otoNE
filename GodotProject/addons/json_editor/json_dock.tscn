@@ -1,0 +1,243 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://addons/json_editor/json_dock.gd" type="Script" id=1]
+[ext_resource path="res://addons/json_editor/button.gd" type="Script" id=2]
+
+[sub_resource type="Image" id=3]
+data = {
+"data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
+"format": "LumAlpha8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id=2]
+flags = 4
+flags = 4
+image = SubResource( 3 )
+size = Vector2( 16, 16 )
+
+[node name="JSON" type="PanelContainer"]
+margin_right = 118.0
+margin_bottom = 41.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 143.0
+margin_bottom = 60.0
+
+[node name="Tools" type="HSplitContainer" parent="VBoxContainer"]
+margin_right = 136.0
+margin_bottom = 22.0
+
+[node name="Left" type="HBoxContainer" parent="VBoxContainer/Tools"]
+margin_right = 96.0
+margin_bottom = 22.0
+
+[node name="Open Settings" type="Button" parent="VBoxContainer/Tools/Left"]
+margin_right = 28.0
+margin_bottom = 22.0
+hint_tooltip = "Open settings popup"
+icon = SubResource( 2 )
+flat = true
+script = ExtResource( 2 )
+icon_name = "GDScript"
+type = "EditorIcons"
+
+[node name="Open File" type="Button" parent="VBoxContainer/Tools/Left"]
+margin_left = 32.0
+margin_right = 60.0
+margin_bottom = 22.0
+hint_tooltip = "Load a JSON file from disk"
+icon = SubResource( 2 )
+flat = true
+script = ExtResource( 2 )
+icon_name = "Load"
+type = "EditorIcons"
+
+[node name="Save File" type="Button" parent="VBoxContainer/Tools/Left"]
+margin_left = 64.0
+margin_right = 92.0
+margin_bottom = 22.0
+hint_tooltip = "Save contents to disk"
+icon = SubResource( 2 )
+flat = true
+script = ExtResource( 2 )
+icon_name = "Save"
+type = "EditorIcons"
+
+[node name="File Name" type="Label" parent="VBoxContainer/Tools/Left"]
+margin_left = 96.0
+margin_top = 4.0
+margin_right = 96.0
+margin_bottom = 18.0
+
+[node name="Right" type="HBoxContainer" parent="VBoxContainer/Tools"]
+margin_left = 108.0
+margin_right = 136.0
+margin_bottom = 22.0
+alignment = 2
+
+[node name="Close File" type="Button" parent="VBoxContainer/Tools/Right"]
+margin_right = 28.0
+margin_bottom = 22.0
+rect_pivot_offset = Vector2( -753.801, -92.3996 )
+hint_tooltip = "Close files and discard any changes"
+icon = SubResource( 2 )
+flat = true
+script = ExtResource( 2 )
+icon_name = "Close"
+type = "EditorIcons"
+
+[node name="Tree Manipulation Tools" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 26.0
+margin_right = 136.0
+margin_bottom = 48.0
+
+[node name="Add Entry" type="MenuButton" parent="VBoxContainer/Tree Manipulation Tools"]
+margin_right = 28.0
+margin_bottom = 22.0
+icon = SubResource( 2 )
+items = [ "Object", null, 0, false, false, 0, 0, null, "", false, "Array", null, 0, false, false, 1, 0, null, "", false, "String", null, 0, false, false, 2, 0, null, "", false, "Number", null, 0, false, false, 3, 0, null, "", false, "Boolean", null, 0, false, false, 4, 0, null, "", false, "Null", null, 0, false, false, 5, 0, null, "", false ]
+script = ExtResource( 2 )
+icon_name = "Add"
+type = "EditorIcons"
+
+[node name="Remove Entry" type="Button" parent="VBoxContainer/Tree Manipulation Tools"]
+margin_left = 32.0
+margin_right = 60.0
+margin_bottom = 22.0
+icon = SubResource( 2 )
+flat = true
+script = ExtResource( 2 )
+icon_name = "Remove"
+type = "EditorIcons"
+
+[node name="Tree" type="Tree" parent="VBoxContainer"]
+margin_top = 52.0
+margin_right = 136.0
+margin_bottom = 53.0
+size_flags_vertical = 3
+columns = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Settings" type="PopupPanel" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 189.0
+margin_bottom = 95.0
+
+[node name="VSplitContainer" type="VSplitContainer" parent="Settings"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 178.0
+margin_bottom = 84.0
+dragger_visibility = 1
+
+[node name="Navigation Bar" type="HSplitContainer" parent="Settings/VSplitContainer"]
+margin_right = 174.0
+margin_bottom = 20.0
+dragger_visibility = 1
+
+[node name="Left" type="HBoxContainer" parent="Settings/VSplitContainer/Navigation Bar"]
+margin_right = 127.0
+margin_bottom = 20.0
+
+[node name="Title" type="Label" parent="Settings/VSplitContainer/Navigation Bar/Left"]
+margin_top = 3.0
+margin_right = 127.0
+margin_bottom = 17.0
+text = "JSON Editor Settings"
+
+[node name="Right" type="HBoxContainer" parent="Settings/VSplitContainer/Navigation Bar"]
+margin_left = 139.0
+margin_right = 174.0
+margin_bottom = 20.0
+alignment = 2
+
+[node name="Close" type="Button" parent="Settings/VSplitContainer/Navigation Bar/Right"]
+margin_left = 23.0
+margin_right = 35.0
+margin_bottom = 20.0
+icon = SubResource( 2 )
+flat = true
+script = ExtResource( 2 )
+icon_name = "Close"
+type = "EditorIcons"
+
+[node name="Contents" type="VBoxContainer" parent="Settings/VSplitContainer"]
+margin_top = 32.0
+margin_right = 174.0
+margin_bottom = 80.0
+
+[node name="Indentation" type="HSplitContainer" parent="Settings/VSplitContainer/Contents"]
+margin_right = 174.0
+margin_bottom = 20.0
+dragger_visibility = 1
+
+[node name="Label" type="Label" parent="Settings/VSplitContainer/Contents/Indentation"]
+margin_top = 3.0
+margin_right = 133.0
+margin_bottom = 17.0
+hint_tooltip = "Type of indentation to use when saving JSON to disk."
+mouse_filter = 0
+size_flags_horizontal = 3
+text = "Indentation"
+
+[node name="OptionButton" type="OptionButton" parent="Settings/VSplitContainer/Contents/Indentation"]
+margin_left = 145.0
+margin_right = 174.0
+margin_bottom = 20.0
+text = "2 wide spaces"
+items = [ "2 wide spaces", null, false, 0, null, "4 wide spaces", null, false, 1, null, "8 wide spaces", null, false, 2, null, "tabs", null, false, 3, null, "no formatting", null, false, 4, null ]
+selected = 0
+
+[node name="Auto-parenting" type="HSplitContainer" parent="Settings/VSplitContainer/Contents"]
+margin_top = 24.0
+margin_right = 174.0
+margin_bottom = 48.0
+dragger_visibility = 1
+
+[node name="Label" type="Label" parent="Settings/VSplitContainer/Contents/Auto-parenting"]
+margin_top = 5.0
+margin_right = 138.0
+margin_bottom = 19.0
+hint_tooltip = "When trying to add a child to a non-object/array element, automatically and silently go for the nearest object/array."
+mouse_filter = 0
+size_flags_horizontal = 3
+text = "Auto-find valid parent"
+
+[node name="CheckBox" type="CheckBox" parent="Settings/VSplitContainer/Contents/Auto-parenting"]
+margin_left = 150.0
+margin_right = 174.0
+margin_bottom = 24.0
+
+[node name="Close File Confirmation" type="ConfirmationDialog" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 207.0
+margin_bottom = 77.0
+dialog_text = "There may have been changes, discard them?"
+
+[node name="Error Dialog" type="AcceptDialog" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 143.0
+margin_bottom = 65.0
+[connection signal="pressed" from="VBoxContainer/Tools/Left/Open Settings" to="." method="_open_settings"]
+[connection signal="pressed" from="VBoxContainer/Tools/Left/Open File" to="." method="_request_open_file"]
+[connection signal="pressed" from="VBoxContainer/Tools/Left/Save File" to="." method="_request_save_file"]
+[connection signal="pressed" from="VBoxContainer/Tools/Right/Close File" to="." method="_request_close_file"]
+[connection signal="pressed" from="VBoxContainer/Tree Manipulation Tools/Remove Entry" to="." method="_remove_selected_element"]
+[connection signal="pressed" from="Settings/VSplitContainer/Navigation Bar/Right/Close" to="." method="_close_settings"]
+[connection signal="item_selected" from="Settings/VSplitContainer/Contents/Indentation/OptionButton" to="." method="_select_indentation"]
+[connection signal="toggled" from="Settings/VSplitContainer/Contents/Auto-parenting/CheckBox" to="." method="_set_auto_parenting_option"]
+[connection signal="confirmed" from="Close File Confirmation" to="." method="_close_file"]
