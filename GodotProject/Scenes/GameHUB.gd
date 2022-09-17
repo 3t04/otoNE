@@ -16,3 +16,7 @@ func _on_Load_To_Music_Game_pressed():
 
 func _on_BackButton_pressed():
 	get_tree().change_scene("res://Scenes/Music Game/HomeMenu.tscn")
+
+
+func _on_Load_To_wait_pressed():
+	pass # Replace with function body.
