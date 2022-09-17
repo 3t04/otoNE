@@ -3,7 +3,7 @@
 [ext_resource path="res://Font/MusicSelectorFont/Main/MPLUS2-VariableFont_wght.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 30
+size = 20
 outline_size = 2
 outline_color = Color( 0.52549, 0.647059, 0.776471, 1 )
 font_data = ExtResource( 1 )

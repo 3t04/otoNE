@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/10 初音ミクの消失 (feat. 初音ミク).mp3-4439bd83d6338b33e35f8d70d4d99ee0.mp3str"
+
+[deps]
+
+source_file="res://AllMusic/jp/ハ行/初音ミクの消失/10 初音ミクの消失 (feat. 初音ミク).mp3"
+dest_files=[ "res://.import/10 初音ミクの消失 (feat. 初音ミク).mp3-4439bd83d6338b33e35f8d70d4d99ee0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

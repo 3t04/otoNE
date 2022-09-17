@@ -3,8 +3,6 @@
 [ext_resource path="res://Notes/Conductor.gd" type="Script" id=1]
 
 [node name="Conductor" type="AudioStreamPlayer"]
-volume_db = 5.0
-autoplay = true
 mix_target = 1
 script = ExtResource( 1 )
 

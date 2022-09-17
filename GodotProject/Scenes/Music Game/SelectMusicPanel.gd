@@ -10,10 +10,8 @@ func _ready():
 
 func _on_BackButton_pressed():
 	get_tree().change_scene("res://Scenes/Music Game/MusicGamefirstFistScreen.tscn")
-<<<<<<< HEAD
+
 
 func _on_Test_button_up():
 	if get_tree().change_scene("res://AllMusic/jp/ハ行/初音ミクの消失/Test初音ミクの消失otoNeplayer.tscn") != OK:
 		print ("Error changing scene to Game")
-=======
->>>>>>> 93f909d84abd87cd777e785ed8af874afb0b662d

@@ -1,4 +1,4 @@
-extends Node
+extends Spatial
 
 var note_obj = preload("res://Notes/Note_Tap.tscn")
 var note_flick_obj = preload("res://Notes//Note_Flick.tscn")
@@ -15,10 +15,10 @@ var perfect_graphic = preload("res://Notes/Perfect.tscn")
 var great_graphic = preload("res://Notes/Great.tscn")
 var miss_graphic = preload("res://Notes/Miss.tscn")
 
-var audio_file = "res://AllMusic/jp/ハ行/初音ミクの消失/10 初音ミクの消失 (feat. 初音ミク) (online-audio-converter.com).wav"
+var audio_file = "res://AllMusic/jp/ハ行/初音ミクの消失/10 初音ミクの消失 (feat. 初音ミク).mp3"
 var audio
 
-var chart_file = "res://AllMusic/jp/ハ行/初音ミクの消失/Test初音ミクの消失.json"
+var chart_file = "res://AllMusic/jp/ハ行/初音ミクの消失/初音ミクの消失.json"
 var chart
 
 var offset_option = 0.080
@@ -66,9 +66,10 @@ func _ready():
 	audio = load(audio_file)
 	chart = load_chart(chart_file)
 	$Conductor.stream = audio
+	$Conductor.volume_db = 10.0
+	$Conductor.play_from_beat(4.52, 0)
 	process_notes()
-	$Conductor.volume_db = -10.0
-	$Conductor.play_from_beat(0, 0)
+	
 	
 func _input(event):
 	if event is InputEventScreenTouch:
@@ -263,7 +264,7 @@ func process_notes():
 	var time_offset = offset_option
 	var chart_time = offset_option
 	var curr_scrollmod = 1.0
-	var curr_beat = 0.0
+	var curr_beat = 4.52
 	var curr_bpm = 120 # default value in case there is no BPM marker for some reason
 	var initial_bpm_set = false
 	for i in range(0, chart.size()):
@@ -275,7 +276,7 @@ func process_notes():
 				chart_time += (60.0/curr_bpm) * (data.beat - curr_beat) * curr_scrollmod
 				curr_beat = data.beat
 				if !initial_bpm_set:
-					$Conductor.set_bpm(data.bpm)
+						$Conductor.set_bpm(data.bpm)
 			if data.cmd == "SV":
 				var new_sv = {}
 				time_offset += (60.0/curr_bpm) * (data.beat - curr_beat)
@@ -459,7 +460,7 @@ func is_hold_start(note_data, index, bpm, init_chart_time, init_scrollmod): # RE
 # Check for a corresponding start that is in the same lane and has no in-between nodes  
 func is_hold_end(note_data, index):
 	# iterate backwards starting from note before this one
-	for i in range(index - 1, -1, -1):
+	for i in range(index -1, -1, -1):
 		var other_note = chart[i]
 		# if we find a slide note of the same type in the same lane:
 		if other_note.type == "System":

@@ -23,7 +23,7 @@ func set_bpm(num):
 	bpm = num
 	sec_per_beat = 60.0 / bpm
 
-func _process(_delta):
+func process(_delta):
 	update_song_position()
 
 
